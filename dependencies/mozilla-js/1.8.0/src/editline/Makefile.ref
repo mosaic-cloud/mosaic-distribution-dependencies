@@ -103,7 +103,7 @@ EDITLINE_OBJS = $(addprefix $(OBJDIR)/, $(EDITLINE_CFILES:.c=.o))
 LIBRARY = $(OBJDIR)/libedit.a
 
 define MAKE_OBJDIR
-if test ! -d $(@D); then rm -rf $(@D); mkdir $(@D); fi
+if test ! -d $(@D); then rm -rf $(@D); mkdir -p $(@D); fi
 endef
 
 all: $(LIBRARY) 
