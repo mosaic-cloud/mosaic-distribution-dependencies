@@ -1,2 +1,4 @@
+mozilla-js/1.8.0 :: http://ftp.mozilla.org/pub/mozilla.org/js/js-1.8.0-rc1.tar.gz :: tar -xzf {bundle} --strip-components 1 -C {target}
 mozilla-js/1.8.5 :: http://ftp.mozilla.org/pub/mozilla.org/js/js185-1.0.0.tar.gz :: tar -xzf {bundle} --strip-components 1 -C {target}
+mozilla-nspr/4.8 :: http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.8/src/nspr-4.8.tar.gz :: tar -xzf {bundle} --strip-components 3 -C {target}
 mozilla-nspr/4.9 :: http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.9/src/nspr-4.9.tar.gz :: tar -xzf {bundle} --strip-components 3 -C {target}
