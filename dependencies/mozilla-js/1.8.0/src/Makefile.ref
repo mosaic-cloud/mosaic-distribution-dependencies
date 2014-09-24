@@ -336,7 +336,7 @@ $(OBJDIR)/jsautocfg.h: $(OBJDIR)/jscpucfg
 	$(OBJDIR)/jscpucfg > $@
 
 $(OBJDIR)/jscpucfg: $(OBJDIR)/jscpucfg.o
-	$(CC) -o $@ $(OBJDIR)/jscpucfg.o
+	$(CC) -o $@ $(PURE_OS_CFLAGS) $(LDFLAGS) $(OBJDIR)/jscpucfg.o
 
 # Add to TARGETS for clobber rule
 TARGETS += $(OBJDIR)/jsautocfg.h $(OBJDIR)/jscpucfg \
