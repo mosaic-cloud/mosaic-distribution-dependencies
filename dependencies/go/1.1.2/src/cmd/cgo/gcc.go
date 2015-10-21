@@ -684,7 +684,6 @@ func (p *Package) gccCmd() []string {
 	c := []string{
 		p.gccName(),
 		"-Wall",                             // many warnings
-		"-Werror",                           // warnings are errors
 		"-o" + gccTmp(),                     // write object to tmp
 		"-gdwarf-2",                         // generate DWARF v2 debugging symbols
 		"-fno-eliminate-unused-debug-types", // gets rid of e.g. untyped enum otherwise
